@@ -1,0 +1,485 @@
+
+*{
+margin: 0px;
+padding: 0px;
+font-family: sans-serif;
+}
+
+body {
+display: flex;
+justify-content: center;
+height: 100%;
+background: F7E7EC;
+align-items: top;
+cursor: url("ico/newarrow-new-inv.ico"), wait;
+}
+
+
+button {
+  position: absolute;
+  padding: 10px 20px;
+  background: #f5ddb7;
+  font-size: 17px;
+  font-weight: 900;
+  color: #181818;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #18181869, inset 2px 2px 10px #ffffffb0;
+  transition: all .3s ease-in-out;
+}
+
+
+.icon-1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 1.2s ease-in-out;
+  z-index: -1;
+}
+
+.icon-2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 1.0s ease-in-out;
+  z-index: -2;
+}
+
+.icon-3 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all .8s ease-in-out;
+  z-index: -2;
+}
+
+.icon-4 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all .9s ease-in-out;
+  z-index: -2;
+}
+
+.icon-5 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all .8s ease-in-out;
+  z-index: -2;
+}
+
+button:hover {
+  padding: 10px 20px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+button:hover .icon-1 {
+  top: -230%; /*mitte*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50px;
+  height: auto;
+  animation: inIcon1 1s ease .45s forwards;
+}
+
+@keyframes inIcon1 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  25% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(5deg);
+  }
+
+  50% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(1deg);
+  }
+
+  65% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+button:hover .icon-2 {
+  position: absolute;
+  top: -180%; /*4*/
+  left: 78%;
+  transform: translate(-50%, 0);
+  width: 75px;
+  height: auto;
+  animation: inIcon2 1s ease .45s forwards;
+}
+
+@keyframes inIcon2 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(10deg);
+  }
+
+  50% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(4deg);
+  }
+
+  80% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(5deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+button:hover .icon-3 {
+  position: absolute;
+  top: -140%; /*2*/
+  left: 25%;
+  transform: translate(-50%, 0);
+  width: 60px;
+  height: auto;
+  animation: inIcon3 1s ease .45s forwards;
+}
+
+@keyframes inIcon3 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-2deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+button:hover .icon-4 {
+  position: absolute;
+  top: -320%; /*1*/
+  left: 20%;
+  transform: translate(-50%, 0);
+  width: 85px;
+  height: auto;
+  animation: inIcon4 1s ease .45s forwards;
+}
+
+@keyframes inIcon4 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  40% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+button:hover .icon-5 {
+  position: absolute;
+  top: -330%; /*3*/
+  left: 80%;
+  transform: translate(-50%, 0);
+  width: 85px;
+  height: auto;
+  animation: inIcon5 1s ease .45s forwards;
+}
+
+@keyframes inIcon5 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.fil-leaf-1 {
+  fill: #7B9B3A
+}
+
+.fil-leaf-2 {
+  fill: #556729;
+  fill-rule: nonzero
+}
+
+.fil-leaf-3 {
+  fill: #556729
+}
+
+.fil-leaf-4 {
+  fill: #3C4819
+}
+
+.fil-leaf-5 {
+  fill: #3C4819
+}
+  
+
+
+
+
+
+
+.container {
+width:100%;
+
+/*gap: 1rem;*/
+
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 2px;
+
+}
+
+.card {
+height: 375px; /*350*/
+margin: 10px;
+box-shadow: 5px 5px 20px black;
+overflow: hidden;
+border-radius: 8px;
+}
+
+img {
+height: 375px; /*350px*/
+width: 300px; /*280px*/
+border-radius: 8px;
+transition: 1.5s;
+}
+
+.intro {
+height: 70px;
+width: 300px; /*280px*/
+padding: 6px;
+box-sizing: border-box;
+position: relative;
+border-radius: 8px;
+bottom: 70px;
+background: rgb(27, 27, 27, .5);
+color: white;
+transition: .5s;
+}
+
+.intro2 {
+height: 70px;
+width: 300px; /*280px*/
+padding: 6px;
+box-sizing: border-box;
+position: relative;
+border-radius: 8px;
+bottom: 70px;
+background: rgb(27, 27, 27, .5);
+color: white;
+transition: .5s;
+}
+
+
+div #nein {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+h1{
+margin: 10px;
+font-size: 25px;
+}
+
+h2 {
+color: white;
+} 
+
+h4 {
+color: white;
+} 
+
+p {
+font: 0.8em/2.2 sans-serif;
+/*font-size: 13px;*/
+/*margin: 20px;*/
+margin-bottom: 0px;
+visibility: hidden;
+opacity: 0;
+color: white;
+}
+
+p#nein {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+	font-size: 0.9em;
+	text-decoration: none;
+	color: yellow;
+} 
+
+span {
+font-weight: bold;
+}
+
+.card:hover {
+cursor: url("ico/newarrow-new.ico"), wait;
+}
+
+.card:hover .intro {
+height: 375px; /*350px*/
+bottom: 350px; /*300px*/
+background: black;
+opacity: 0.9;
+border-radius: 8px;
+}
+
+.card:hover p{
+opacity:1;
+visibility: visible;
+}
+
+
+.card:hover .intro2 {
+height: 375px; /*350px*/
+bottom: 350px; /*300px*/
+background: white;
+opacity: .8;
+border-radius: 8px;
+}
+
+
+
+
+.card:hover img{
+transform: scale(1.2) rotate(-360deg);
+transition-timing-function: ease-in-out;
+}
+
+.tel {
+	height:15px;
+	width:15px;
+	border-radius: 0px;
+/*	padding: 0px 15px; */
+	margin: 0px 5px 5px 3px;
+	transition: 0s;
+	background: black;
+	opacity: 0.9;
+} 
+
+.ico {
+	height:20px;
+	width:20px;
+	border-radius: 0px;
+/*	padding: 0px 15px; */
+	margin: 0px 0px 0px 3px;
+} 
+
+.download {
+cursor: url("ico/download.ico"), wait;
+} 
+
+
+
+.overlay {
+  display: none;
+  position: absolute;  /* or absolute, depending on requirement */
+  width: 700px;
+  height: 500px;
+  opacity:.98;
+  border-radius: 8px;
+  top: 20;
+  left: 30;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* high z-index to overlay all other content */
+  justify-content: center;
+  align-items: center;
+}
+
+#toggle-overlay:checked + .overlay { display: flex; }
+
+
+.info-content {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px black;
+  text-align: center;
+  opacity:.9;
+}
+
+.info-content p{
+ opacity: 1;
+ visibility: visible;
+ cursor: default;
+ color: white;
+ font-weight: 700;
+} 
+
+.more-info {
+cursor: url("ico/info2.ico"), pointer;
+} 
+
+li{
+margin: 7px;
+0.8em/2.2 sans-serif;
+}
+
+/* preload images */
+
+.vorladen {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	pointer-events: none;
+	opacity: 0%;
+} 
